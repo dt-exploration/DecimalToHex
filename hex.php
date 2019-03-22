@@ -30,7 +30,7 @@ function decimalToHex($num)
     $first = floor($num / 16);
     $second = $num % 16;
 
-    if($first < 16) {
+    if ($first < 16) {
         return hexmap($first).hexmap($second);
     } else {
         $result = decimalToHex($first).hexmap($second);
